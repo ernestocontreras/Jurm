@@ -1,0 +1,12 @@
+# 			0 	si x = 0
+# F(x) = 	x-1	si x > 0 
+# 
+
+x = 10
+
+1:	J(x, y, 6) # Comprobación inicial si x = 0
+2:	S(y)
+3:	J(x, y, 6)
+4:	S(1)
+5:	J(1, 1, 2)
+6:

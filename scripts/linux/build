@@ -1,0 +1,11 @@
+cd ../../
+
+#Actualiza las rutas de archivos .java
+find ./src -iname *.java > scripts/routes
+
+#Copia los archivos de la carpeta de recursos a bin
+rm -R bin/res/
+cp -r src/res bin/res
+
+
+javac -Xlint:unchecked -Xdiags:verbose -d bin @scripts/routes

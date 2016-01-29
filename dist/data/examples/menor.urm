@@ -1,0 +1,23 @@
+#			x si x<y
+# f(x,y)  = 	x si x=y
+#			y si y<x
+x = 15
+y = 5
+
+auxX = 0
+auxY = 0
+
+1:	J(auxX, x, 6) #x es menor
+2:	J(auxY, y, 8) #y es menor
+
+3:	S(auxX)
+4:	S(auxY)
+5:	J(1,1,1)
+
+6:	T(x, 1)
+7:	J(1,1,9)
+
+8:	T(y, 1)
+
+9:
+	

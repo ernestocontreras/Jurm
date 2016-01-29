@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="650.0" styleClass="mainContainer" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.URMController">
+   <children>
+      <GridPane styleClass="menu">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="204.0" minWidth="10.0" prefWidth="148.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="367.0" minWidth="10.0" prefWidth="352.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0" vgrow="NEVER" />
+         </rowConstraints>
+         <children>
+            <HBox prefHeight="40.0" prefWidth="188.0">
+               <children>
+                  <MenuButton mnemonicParsing="false" text="Archivo">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#handleOpenFile" text="Abrir" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleSaveFile" text="Guardar" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleNewFile" text="Nuevo" />
+                    </items>
+                  </MenuButton>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" GridPane.columnIndex="1" GridPane.vgrow="NEVER">
+               <children>
+                  <Slider fx:id="slider" blockIncrement="50.0" max="1000.0" min="500.0" orientation="VERTICAL" value="750.0">
+                     <tooltip>
+                        <Tooltip text="Ajusta la velocidad de ejecución" />
+                     </tooltip>
+                  </Slider>
+                  <ToggleButton fx:id="runButton" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleToggleRunStop" prefHeight="40.0" prefWidth="40.0">
+                     <graphic>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@play.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Iniciar/ pausar ejecución paso a paso" />
+                     </tooltip>
+                  </ToggleButton>
+                  <Button contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleRunStep" prefHeight="40.0" prefWidth="40.0" styleClass="iconButton" text="Step">
+                     <tooltip>
+                        <Tooltip text="Ejecutar la siguiente instrucción" />
+                     </tooltip>
+                     <graphic>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@next.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" visible="false">
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </Separator>
+                  <Button contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleRun" prefHeight="40.0" prefWidth="40.0" styleClass="iconButton" text="Run">
+                     <tooltip>
+                        <Tooltip text="Ejecutar programa" />
+                     </tooltip>
+                     <graphic>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@run.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" GridPane.columnIndex="2" />
+         </children>
+      </GridPane>
+      <SplitPane dividerPositions="0.2608695652173913" styleClass="splitPane" VBox.vgrow="ALWAYS">
+        <items>
+          <AnchorPane minWidth="-Infinity" prefHeight="434.0" prefWidth="80.0" SplitPane.resizableWithParent="false">
+               <children>
+                  <TextArea fx:id="registerArea" editable="false" prefHeight="434.0" prefWidth="80.0" styleClass="registerArea" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children></AnchorPane>
+          <AnchorPane prefHeight="324.0" prefWidth="301.0" styleClass="paneEditor">
+               <children>
+                  <StackPane prefHeight="328.0" prefWidth="533.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <TextArea fx:id="codeArea" styleClass="codeArea" />
+                     </children>
+                  </StackPane>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+      <TextArea fx:id="messageArea" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="100.0" styleClass="messageArea" />
+   </children>
+   <stylesheets>
+      <URL value="@main.css" />
+      <URL value="@area.css" />
+   </stylesheets>
+   <padding>
+      <Insets bottom="2.0" left="2.0" right="2.0" />
+   </padding>
+</VBox>

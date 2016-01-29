@@ -1,0 +1,12 @@
+# Suma dos números x e y
+# R1 = x + y
+
+x = 10
+y = 5
+
+1:	T(x, 1)
+2:	J(y, aux, 6)
+3:		S(aux)
+4:		S(1)
+5:	J(1, 1, 2)
+6:

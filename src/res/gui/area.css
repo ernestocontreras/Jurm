@@ -1,0 +1,28 @@
+.codeArea{
+	-fx-font-family: 'Lucida Console';
+	-fx-text-fill: #A6E22E;
+	-fx-font-size: 18px;
+
+	-fx-highlight-fill: #49483E;
+	-fx-highlight-text-fill: #AE81FF;
+}
+.codeArea .content{
+    -fx-background-color: #272822;
+}
+
+.messageArea{
+	-fx-font-size: 16px;
+	-fx-font-family: 'Lucida Console';
+	-fx-text-fill: #FFFFFF;
+}.messageArea .content{
+	-fx-background-color: #272822;
+}
+
+.registerArea{
+	-fx-text-fill: #0EFCF8;
+	-fx-font-size: 15px;
+	-fx-font-weight: bold;
+}
+.registerArea .content{
+	-fx-background-color: #272822;
+}

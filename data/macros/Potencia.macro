@@ -1,0 +1,16 @@
+Potencia
+
+base = 0
+exponente = 0
+
+1:	J(exponente, cero, 8)
+	
+2:	S(i)
+3:	T(base, 1)
+4:	J(exponente, i, 9)
+5:		S(i)
+6:		Multiplica(base,1)
+7:	J(1,1,4)
+8:	S(1)
+9:
+Potencia

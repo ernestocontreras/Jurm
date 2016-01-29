@@ -1,0 +1,13 @@
+# Resta dos numeros x e y, simpre que x > y
+# R1 = x - y
+
+x = 10
+y = 5
+z = 0
+
+1:	J(x, y, 5)
+2:		S(y)
+3:		S(z)
+4:	J(1, 1, 1)
+5:	T(z, 1)
+6:
