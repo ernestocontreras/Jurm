@@ -1,5 +1,5 @@
-![Jurm logo](Jurm.ico)
 #Jurm
+![Jurm logo](Jurm.ico)
 
 ##¿Que es Jurm?
 Jurm es un interprete interactivo de lenguaje URM(unlimited register machine).
@@ -31,7 +31,7 @@ _____________________________________________________________________
 ##Funciones
 
 Sean n y m registros y q una instrucción cualquiera.
-|	Función		| Efecto			|						 |
+|	Función		| Efecto			|	Descripción			 |
 |---------------| ------------------|------------------------|
 |	Z(n)		| n := 0			|Hace cero al registro n |
 |	T(n, m)		| m := n 			|Transferencia			 |
