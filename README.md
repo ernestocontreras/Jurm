@@ -170,4 +170,5 @@ a = 10
 ```
 ##¿Saber más?
 Para comprender mejor el funcionamiento de Jurm vea lo ejemplos que se encuentran en `data/examples`.
+![Jurm screenshot](man/screenshot1.png)
 

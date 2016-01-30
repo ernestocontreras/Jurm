@@ -1,3 +1,4 @@
+#! /bin/sh
 cd ../../
 
 #Actualiza las rutas de archivos .java

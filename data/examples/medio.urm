@@ -1,5 +1,5 @@
-# 			x/2 	si x es par
-# F(x) = 	0		si x es impar 
+#				x/2	si x es par
+#	F(x) = 	0		si x es impar 
 #
 
 x = 100
@@ -10,7 +10,7 @@ numero = 0
 2:		S(numero)
 3:		S(numero)
 4:		S(mitad)
-5:		J(mitad, x, 8) # salimos y r1 = 0
+5:		J(mitad, x, 8) 
 6:	J(1, 1, 1)
 
 7:	T(mitad, 1)
