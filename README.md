@@ -3,7 +3,7 @@
 
 ##¿Que es Jurm?
 Jurm es un interprete interactivo de lenguaje URM(unlimited register machine).
-Su objetivo es facilitar la comprención de este modelo teórico de computación permitiendote saber en cada momento que instrucción se está ejecutando y que cambio hace eb los registros.
+Su objetivo es facilitar la comprensión de este modelo teórico de computación permitiéndote saber en cada momento que instrucción se está ejecutando y que cambio hace en los registros.
 
 ##Requerimientos
 

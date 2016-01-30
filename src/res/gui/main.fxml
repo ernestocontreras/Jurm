@@ -33,14 +33,26 @@
                   </MenuButton>
                </children>
             </HBox>
-            <HBox alignment="TOP_CENTER" GridPane.columnIndex="1" GridPane.vgrow="NEVER">
+            <HBox alignment="CENTER" GridPane.columnIndex="1" GridPane.vgrow="NEVER">
                <children>
-                  <Slider fx:id="slider" blockIncrement="50.0" max="1000.0" min="500.0" orientation="VERTICAL" value="750.0">
+                  <Button contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleRun" prefHeight="40.0" prefWidth="40.0" styleClass="iconButton" text="Run">
                      <tooltip>
-                        <Tooltip text="Ajusta la velocidad de ejecución" />
+                        <Tooltip text="Ejecutar programa" />
                      </tooltip>
-                  </Slider>
-                  <ToggleButton fx:id="runButton" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleToggleRunStop" prefHeight="40.0" prefWidth="40.0">
+                     <graphic>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@run.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" visible="false">
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </Separator>
+                  <ToggleButton fx:id="runButton" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleToggleRunStop" prefHeight="40.0" prefWidth="40.0" styleClass="iconButton">
                      <graphic>
                         <ImageView pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -64,23 +76,11 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Separator orientation="VERTICAL" prefHeight="200.0" visible="false">
-                     <padding>
-                        <Insets left="10.0" right="10.0" />
-                     </padding>
-                  </Separator>
-                  <Button contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleRun" prefHeight="40.0" prefWidth="40.0" styleClass="iconButton" text="Run">
+                  <Slider fx:id="slider" blockIncrement="50.0" max="1000.0" min="500.0" value="750.0">
                      <tooltip>
-                        <Tooltip text="Ejecutar programa" />
+                        <Tooltip text="Ajusta la velocidad de ejecución" />
                      </tooltip>
-                     <graphic>
-                        <ImageView pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@run.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </Button>
+                  </Slider>
                </children>
             </HBox>
             <HBox alignment="CENTER_RIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" GridPane.columnIndex="2" />

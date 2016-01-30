@@ -1,7 +1,7 @@
 .codeArea{
 	-fx-font-family: 'Lucida Console';
 	-fx-text-fill: #A6E22E;
-	-fx-font-size: 18px;
+	-fx-font-size: 16px;
 
 	-fx-highlight-fill: #49483E;
 	-fx-highlight-text-fill: #AE81FF;
@@ -11,12 +11,13 @@
 }
 
 .messageArea{
-	-fx-font-size: 16px;
+	-fx-font-size: 14px;
 	-fx-font-family: 'Lucida Console';
-	-fx-text-fill: #FFFFFF;
+	-fx-text-fill: #F78181;
 }.messageArea .content{
-	-fx-background-color: #272822;
+	-fx-background-color: #000000;
 }
+
 
 .registerArea{
 	-fx-text-fill: #0EFCF8;

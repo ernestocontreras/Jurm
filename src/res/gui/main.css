@@ -1,7 +1,6 @@
 .menu, .mainContainer {
-	-fx-background-color: lightgray;
+	-fx-background-color: #272822;
 }
-
 .iconButton{
 	-fx-background-radius: 30px;
 }
