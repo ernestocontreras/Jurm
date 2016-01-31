@@ -1,8 +1,8 @@
 CD ../../
-
 DIR /s /B *.java > scripts\routes
 
-RD  bin\res /S/Q
+RD  bin\ /S/Q
+MKDIR bin\
 XCOPY src\res bin\res\ /E/Y
 
 javac -Xlint:unchecked -Xdiags:verbose -d bin @scripts\routes
